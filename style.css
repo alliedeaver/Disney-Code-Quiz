@@ -1,16 +1,19 @@
 * {
     box-sizing: border-box;
-    background:rgb(38, 38, 165)
+    color: rgb(90, 123, 215);
+    font-weight: 500;
 
 }
 
-header {
+.h1 {
     font-family: fantasy;
-    color: aliceblue;
+    color: black;
+    font-weight: 500;
     font-size: 40px;
     display:flex;
     justify-content: center;
-    margin: 0%;
+    margin: 10%;
+    padding: 5%;
     background: linear-gradient(0deg, rgb(29, 29, 143) 0%, rgb(67, 153, 207) 55% );
 }
 
@@ -19,9 +22,8 @@ header {
     font-size: 18px;
     display:flex;
     justify-content: center;
-    margin: 5%;
-    color: aliceblue;
-
+    margin: 0%;
+    color: black;
 }
 
 .instructions {
@@ -30,29 +32,47 @@ header {
     box-sizing: content-box;
     display:flex;
     justify-content: center;
-    margin: 5%;
-    color: aliceblue;
-
+    margin: 0%;
+    color: black;
 }
 
 .start-button {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    line-height: 8px;
+    margin-top: 20px;
     background-color: white;
     font-size: 16px;
+
 }
 
 .question-1 {
-    flex: content;
-    display: inline-block;
-    margin: 10px;
-    padding: 5px;
-    border:rgb(67, 153, 207);
+    display: flex;
+    justify-content: center;
+    border:rgb(0, 0, 0);
 }
 
 
 .questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(186, 157, 214);
+    border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: black;
     font-size: 16px;
-    background-color: azure;
-    display: inline-block;
-    
 }
+
+question boxes 
+width: 540px 
+background-color: blue
+font color white border radius 5px
+
+
+
+
+
