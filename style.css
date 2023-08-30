@@ -38,7 +38,7 @@
     font-size: 18px;
     display:flex;
     justify-content: center;
-    padding: 5%;
+    padding: 2%;
     color: black;
 }
 
@@ -49,6 +49,7 @@
     display:flex;
     justify-content: center;
     margin: auto;
+    padding: 2%;
     color: black;
 }
 
@@ -83,7 +84,7 @@
 
 .options1 {
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 10px;
     padding: 10px;
 }
@@ -99,7 +100,7 @@
 .options2 {
     flex:auto;
     justify-content: space-around;
-    margin: 10 px;
+    margin: auto;
     padding: 10px;
 }
 
@@ -114,7 +115,7 @@
 .options3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: auto;
+    margin:auto;
     padding: 10px;
 }
 .question-4 {
@@ -128,6 +129,7 @@
 .options4 {
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content:normal;
     margin: auto;
     padding: 10px;
 }

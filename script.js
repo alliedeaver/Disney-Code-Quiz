@@ -34,52 +34,38 @@ let question3 = document.querySelector(".question-3")
 let question4 = document.querySelector(".question-4")
 let question5 = document.querySelector(".question-5")
 
-// the function is called when the start button is pressed and the timer begins to go 
-
-
 startButton.addEventListener("click", function(event) {
-    startTimer;
-} );
-
-setInterval(countdowntimerEl, 1000);
-
-timerEl =setInterval(function(){
-    timeLeft --;
-    timerEl.textContent = imeLeft
-}
-)
-
-function countdown() {
-    timeLeft= 90;
-    timerEl.textContent = timeText + "seconds left";
-    time--;
-}
-
-
-  // The start timer function is initiated when the start button is pressed 
-  function startTimer() {
-    // Sets timer
-    timerEl = setInterval(function() {
-      timerCount--;
-      timerElement.textContent = timerCount;
-      if (timerCount >= 0) {
-
-        if (isWin && timerCount > 0) {
-          // Clears interval and stops timer
-          clearInterval(timer);
-          winGame();
+    startTimer();
+  } );
+  
+  var timerCount = 90;
+  var isWin;
+  
+    // The start timer function is initiated when the start button is pressed 
+    function startTimer() {
+      // Sets timer
+      timerEl = setInterval(function() {
+  
+        let timerEl = document.querySelector(".timer")
+        timerCount--;
+        timerEl.innerHTML = `Time Left: ${timerCount}`;
+  
+        if (timerCount >= 0) {
+  
+          if (isWin && timerCount > 0) {
+            // Clears interval and stops timer
+            clearInterval(timerEl);
+            winGame();
+          }
         }
-      }
-      // Tests if time has run out
-      if (countdown === 0) {
-        // Clears interval
-        clearInterval(timerEl);
-        quizOver();
-      }
-    }, 90000);
-  }
-
-
+        // Tests if time has run out
+        if (countdown === 0) {
+          // Clears interval
+          clearInterval(timerEl);
+          quizOver();
+        }
+      }, 1000);
+    }
 
 
 //what happens when the correct answer has been picked 
@@ -119,8 +105,6 @@ if (question4 == Q4o4) {
 
     alert("Incorrect!"); 
 }
-
-
 
 
 if (question5 == Q5o4) {
