@@ -2,6 +2,9 @@ let startButton = document.querySelector(".start-button")
 let score = document.querySelector(".score")
 let timerEl = document.querySelector(".timer")
 let countdown = document.querySelector(".timer_sec")
+let timeLeft = 90 
+let countdowntimerEl =
+let timeText =document.querySelector(".time_text")
 
 let Q1o1 = document.querySelector(".ques1-opt1")
 let Q1o2 = document.querySelector(".ques1-opt2")
@@ -38,10 +41,17 @@ startButton.addEventListener("click", function(event) {
     startTimer;
 } );
 
-setInterval(updatetimerEl, 1000);
+setInterval(countdowntimerEl, 1000);
 
-function updatetimerEl() {
-    timerEl.innerHTML = `${seconds}`;
+timerEl =setInterval(function(){
+    timeLeft --;
+    timerEl.textContent = imeLeft
+}
+)
+
+function countdown() {
+    timeLeft= 90;
+    timerEl.textContent = timeText + "seconds left";
     time--;
 }
 
@@ -68,6 +78,7 @@ function updatetimerEl() {
       }
     }, 90000);
   }
+
 
 
 
@@ -134,4 +145,3 @@ function endQuiz() {
   }
 
 
-  
