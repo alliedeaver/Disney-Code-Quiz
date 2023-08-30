@@ -1,20 +1,36 @@
 * {
     box-sizing: border-box;
-    color: rgb(90, 123, 215);
-    font-weight: 500;
 
 }
 
 .h1 {
-    font-family: fantasy;
+    font-family: 'Dancing Script', cursive;
     color: black;
     font-weight: 500;
     font-size: 40px;
     display:flex;
     justify-content: center;
-    margin: 10%;
-    padding: 5%;
+    margin: 0%;
+    padding: 10%;
     background: linear-gradient(0deg, rgb(29, 29, 143) 0%, rgb(67, 153, 207) 55% );
+}
+.timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 15px;
+    flex-wrap:nowrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 2%;
+    background-color: rgb(158, 100, 211);
+}
+
+.score {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 15px;
+    flex-wrap:nowrap;
+    justify-content:flex-start
 }
 
 .introduction {
@@ -22,7 +38,7 @@
     font-size: 18px;
     display:flex;
     justify-content: center;
-    margin: 0%;
+    padding: 5%;
     color: black;
 }
 
@@ -32,7 +48,7 @@
     box-sizing: content-box;
     display:flex;
     justify-content: center;
-    margin: 0%;
+    margin: auto;
     color: black;
 }
 
@@ -40,39 +56,95 @@
     display: flex;
     justify-content: center;
     height: 30px;
-    line-height: 8px;
-    margin-top: 20px;
+    line-height: 20px;
+    margin: auto;
     background-color: white;
     font-size: 16px;
-
-}
-
-.question-1 {
-    display: flex;
-    justify-content: center;
-    border:rgb(0, 0, 0);
 }
 
 
 .questions {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
-    background-color: rgb(186, 157, 214);
-    border-radius: 10px;
+    margin: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font: black;
     font-size: 16px;
 }
 
-question boxes 
-width: 540px 
-background-color: blue
-font color white border radius 5px
+.question-1 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-style: italic;
+    color: blue;
+}
 
 
+.options1 {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+}
 
+.question-2 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-style: italic;
+    color: blue;
+}
+
+.options2 {
+    flex:auto;
+    justify-content: space-around;
+    margin: 10 px;
+    padding: 10px;
+}
+
+.question-3 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-style: italic;
+    color: blue;
+}
+
+.options3 {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px;
+}
+.question-4 {
+    display: flex;
+    justify-content:center;
+    margin: 30px;
+    font-style: italic;
+    color: blue;
+}
+
+.options4 {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px;
+}
+
+.question-5 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-style: italic;
+    color: blue;
+}
+
+.options5 {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px;
+}
 
 
