@@ -1,6 +1,8 @@
 let startButton = document.querySelector(".start-button")
 let score = document.querySelector(".score")
-let timer = document.querySelector(".timer")
+let timerEl = document.querySelector(".timer")
+let countdown = document.querySelector(".timer_sec")
+
 let Q1o1 = document.querySelector(".ques1-opt1")
 let Q1o2 = document.querySelector(".ques1-opt2")
 let Q1o3 = document.querySelector(".ques1-opt3")
@@ -23,10 +25,101 @@ let Q5o3 = document.querySelector(".ques5-opt3")
 let Q5o4 = document.querySelector(".ques5-opt4")
 
 
+let question1 = document.querySelector(".question-1")
+let question2 = document.querySelector(".question-2")
+let question3 = document.querySelector(".question-3")
+let question4 = document.querySelector(".question-4")
+let question5 = document.querySelector(".question-5")
+
 // the function is called when the start button is pressed and the timer begins to go 
-function startButton() {
-    timerCount = 90;
+
+
+startButton.addEventListener("click", function(event) {
+    startTimer;
+} );
+
+setInterval(updatetimerEl, 1000);
+
+function updatetimerEl() {
+    timerEl.innerHTML = `${seconds}`;
+    time--;
 }
+
+
+  // The start timer function is initiated when the start button is pressed 
+  function startTimer() {
+    // Sets timer
+    timerEl = setInterval(function() {
+      timerCount--;
+      timerElement.textContent = timerCount;
+      if (timerCount >= 0) {
+
+        if (isWin && timerCount > 0) {
+          // Clears interval and stops timer
+          clearInterval(timer);
+          winGame();
+        }
+      }
+      // Tests if time has run out
+      if (countdown === 0) {
+        // Clears interval
+        clearInterval(timerEl);
+        quizOver();
+      }
+    }, 90000);
+  }
+
+
+
+//what happens when the correct answer has been picked 
+if (question1 == Q1o2) {
+    alert("Correct!");
+
+}   else { (question1 === Q1o1 && Q1o3 && Q1o4)
+
+    alert("Incorrect!"); 
+}
+
+
+if (question2 == Q2o3) {
+    alert("Correct!");
+    
+}   else { (question2 === Q2o1 && Q2o2 && Q2o4)
+
+    alert("Incorrect!"); 
+}
+
+
+if (question3 == Q3o1) {
+    alert("Correct!");
+    
+}   else { (question3 === Q3o2 && Q3o3 && Q3o4)
+
+    alert("Incorrect!"); 
+}
+
+
+
+
+if (question4 == Q4o4) {
+    alert("Correct!");
+    
+}   else { (question4 === Q4o1 && Q4o2 && Q4o3)
+
+    alert("Incorrect!"); 
+}
+
+
+
+
+if (question5 == Q5o4) {
+    alert("Correct!");
+    
+}   else { (question5 === Q5o1 && Q5o2 && Q5o3)
+
+    alert("Incorrect!"); 
+}
+
 
 //the function is called when the timer is up
 function endQuiz() {
@@ -40,30 +133,5 @@ function endQuiz() {
     wordBlank.textContent ="Here is your score!";
   }
 
-****
-  // The start timer function is initiated when the start button is pressed 
-  function startTimer() {
-    // Sets timer
-    timer = setInterval(function() {
-      timerCount--;
-      timerElement.textContent = timerCount;
-      if (timerCount >= 0) {
 
-        if (isWin && timerCount > 0) {
-          // Clears interval and stops timer
-          clearInterval(timer);
-          winGame();
-        }
-      }
-      // Tests if time has run out
-      if (timerCount === 0) {
-        // Clears interval
-        clearInterval(timer);
-        quizOver();
-      }
-    }, 90000);
-  }
-
-if (Q1o2 )
-
-
+  
